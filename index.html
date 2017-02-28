@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="appName">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body >
+    <div class="input" ng-controller="ctrlEveryone">
+      <input type="text"  ng-model="input"> ENTER
+      <button type="button" name="button" ng-click="getInput()">Submit</button>
+      <ul>
+        <li ng-repeat="i in inputs track by $index">{{i}}<button type="button" ng-click="remove()"> Remove</button></li>
+      </ul>
+    </div>
+    <script src= "node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src= "app.js"> </script>
+    <script type="text/javascript" src= "ctrlEveryone.js"></script>
+
+  </body>
+</html>
